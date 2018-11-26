@@ -1,0 +1,43 @@
+
+
+body{
+  background-image: url("cc.jpg");
+  background-size:100%;
+
+}
+
+h1,h3{
+  color:white;
+}
+div {
+  display: inline-block;
+}
+img{
+  height:400px;
+  width:300px;
+}
+@keyframes fadein {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+#row1 {
+  animation: fadein 3s;
+}
+
+#row2 {
+  animation: fadein 6s;
+}
+
+#row3 {
+  animation: fadein 9s;
+}
+
+#row4{
+  animation: fadein 12s;
+}
+
+@media only screen and (max-width: 800px){
+  img{
+    width:100px; height:75px;
+  }
+}
