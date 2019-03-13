@@ -3,15 +3,17 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: orange;
   font-family: arial;
 }
 .link:hover {
-  background-color: black;
+  background-color: white;
 }
 .link {
   display:inline-block;
-  color:rgb(90,150,200);
+  font-family: "char_bbregular";
+  color: black;
+  font-size: 30;
   text-align: center;
   padding: 16px 20px;
   text-decoration: none;
@@ -43,4 +45,102 @@ h1{
   background: linear-gradient(rgba(255,255,0,0.8) 10%, rgba(255,165,0,0.8));
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.product-img{
+width: 350px;
+height: 300px;
+}
+
+.shadow {
+    display: inline-block;
+    box-shadow: 5px 5px #00000099;
+    background-color: orange;
+    margin: 10px;
+    border: 1px solid black;
+    color: black;
+    animation: zoomIn 5s;
+    transition: transform .2s;
+}
+
+.shadow:hover{
+  transform: scale(1.2);
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.grid-container{
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  width: 50px;
+  height: 100px;
+}
+
+.grid-containerr{
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  width: 50px;
+  height: 100px;
+}
+
+.grid-item{
+  border: 1px solid orange;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-items{
+  border: 1px solid orange;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+li{
+  text-decoration: none;
 }
